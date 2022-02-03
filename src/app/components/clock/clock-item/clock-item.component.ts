@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import * as moment from 'moment-timezone';
+import { using } from 'rxjs';
 
 import { Clock } from 'src/app/models/clock';
 import { UIStyle } from 'src/app/models/uistyle';
@@ -30,7 +31,7 @@ export class ClockItemComponent implements OnInit {
     let nowThere = moment().utc().clone().tz(code);
     this.now = nowThere.format('HH:mm');
     this.day = nowThere.format('dddd');
-    this.workDay = nowThere.hour()>=8 && nowThere.hour()<18;
+    this.workDay = nowThere.hour()>=this.UiStyle.workStart && nowThere.hour()<this.UiStyle.workEnd;
     this.fullDate = nowThere;
   } 
 }

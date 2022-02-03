@@ -27,9 +27,18 @@
           </div>
           <div class="col-2">
             <div class="form-group">
-              <label for="inputTextColor">Work</label>
+              <label for="inputTextColor">Active</label>
               <input type="color" class="form-control form-control-sm" id="inputWorkdayColor" [(ngModel)]="UiStyle.workday"
                 (change)="updateColor()">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="inputTextColor">Active Hours</label>
+              <input type="number" class="form-control form-control-sm" id="inputWorkStart"
+                [(ngModel)]="UiStyle.workStart" (change)="updateColor()">
+                <input type="number" class="form-control form-control-sm" id="inputWorkEnd"
+                  [(ngModel)]="UiStyle.workEnd" (change)="updateColor()">
             </div>
           </div>
           <div class="col-2">
