@@ -1,0 +1,5 @@
+<div [ngClass]="{'work': workDay}" [ngStyle]="{'cursor': 'pointer','color': !workDay ? UiStyle.foreground :UiStyle.workday }" [title]="fullDate">
+    <div class="col-12"><span [innerText]="Clock.label" class="label"></span></div>
+    <div class="col-12"><span [innerText]="now"  class="clock" ></span></div>
+    <div class="col-12"><span [innerText]="day" class="day"></span></div>
+</div>

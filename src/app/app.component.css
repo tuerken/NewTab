@@ -1,0 +1,6 @@
+.list-group-item, .list-group{
+    border:0;
+}
+.container-fluid{
+    height: 100vh;
+}
