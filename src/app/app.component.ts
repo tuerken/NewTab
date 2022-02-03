@@ -15,9 +15,14 @@ export class AppComponent  {
   constructor(private service:UiService){
     var uiColorRaw =  localStorage.getItem('ui_style');
     if(uiColorRaw){
-      var uiStyle = JSON.parse(uiColorRaw);
+      try {
+        var uiStyle = JSON.parse(uiColorRaw);
       this.uiStyle = uiStyle;
       service.changeUi(uiStyle);
+      } catch (error) {
+        service.changeUi(null);
+      }
+      
     }else{
       service.changeUi(null);
     }

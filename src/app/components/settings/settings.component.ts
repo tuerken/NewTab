@@ -10,13 +10,13 @@ import { UIStyle } from 'src/app/models/uistyle';
 export class SettingsComponent implements OnInit {
   @Input()Clocks: Clock[];
   @Input() UiStyle: UIStyle;
-  
+  showData: boolean =false;
   constructor() { }
   
   ngOnInit(): void {
     
   }
- 
+
 
 
 }

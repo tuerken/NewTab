@@ -52,7 +52,13 @@ export class ClocksService {
       result = this.default;
       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(result));
     } else {
-      result = JSON.parse(data);
+      try {
+        result = JSON.parse(data);
+      } catch (error) {
+        result = this.default;
+        localStorage.setItem(this.STORAGE_KEY, JSON.stringify(result));
+      }
+      
     }
 
     return result;

@@ -7,7 +7,7 @@ import { UiService } from 'src/app/services/ui.service';
   styleUrls: ['./settings-theme.component.css']
 })
 export class SettingsThemeComponent implements OnInit {
-
+  current:string = '☀️'
   constructor(private uiService:UiService) { }
 
   ngOnInit(): void {
@@ -17,5 +17,14 @@ export class SettingsThemeComponent implements OnInit {
     this.uiService.defaultTo(theme);
   }
   
+  toggle(){
+    if(this.current == '☀️'){
+      this.current = '🌙';
+    }else{
+      this.current = '☀️';
+    }
+    this.theme(this.current);
+  
+  }
 
 }
