@@ -1,0 +1,15 @@
+<div class="form-group">
+    <label>UI Data</label>
+    <textarea class="form-control" rows="3"  [(ngModel)]="uiData"></textarea>
+</div>
+
+<div class="form-group">
+    <label>Clock Data</label>
+    <textarea class="form-control" rows="5"  [(ngModel)]="clockData"></textarea>
+</div>
+
+<div class="alert alert-warning" role="alert">
+    <b>Updating</b> this data may <b>break</b> this extension; you may need to uninstall and reinstall it. 
+</div>
+
+<button class="btn btn-primary" (click)="update()">Update</button>
