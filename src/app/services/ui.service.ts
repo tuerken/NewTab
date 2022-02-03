@@ -9,9 +9,9 @@ export class UiService {
 
   constructor() { }
 
-  private defaultDark =  { background:"#1c1c1c", foreground:"#6b6b6b", workday:"#83710c", zoom:1 ,marginTop: "17%"}
+  private defaultDark =  { background:"#1c1c1c", foreground:"#6b6b6b", workday:"#83710c", zoom:1 ,marginTop: "17%", workStart:9, workEnd:17};
  
-  private defaultLight = {"background":"#e6e6e6","foreground":"#b0b0b0","workday":"#13890b","zoom":1,"marginTop":"17%"}
+  private defaultLight = {"background":"#e6e6e6","foreground":"#b0b0b0","workday":"#13890b","zoom":1,"marginTop":"17%", workStart:9, workEnd:17}
 
   private uiStyleSource = new BehaviorSubject<UIStyle>(this.defaultDark);
 

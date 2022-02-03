@@ -4,4 +4,6 @@ export interface UIStyle{
     workday: string;
     zoom: number;
     marginTop : string;
+    workStart: number;
+    workEnd: number;
 }
