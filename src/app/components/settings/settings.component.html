@@ -1,9 +1,9 @@
 <div *ngIf="UiStyle" class="modal fade" id="editClockModal" tabindex="-1" role="dialog" aria-labelledby="editClockModalLabel" aria-hidden="true">
-  <div class="modal-dialog " role="document">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content ">
       <div class="modal-body bg-light text-dark ">
         <app-settings-tabs [showData]="showData"></app-settings-tabs>
-        <div class="tab-content p-3 text-center" id="myTabContent">
+        <div class="tab-content p-3" id="myTabContent">
           <div class="tab-pane fade" id="zones" role="tabpanel" aria-labelledby="zones-tab">
             <app-settings-clocks [Clocks]="Clocks" [UiStyle]="UiStyle"></app-settings-clocks>
           </div>
