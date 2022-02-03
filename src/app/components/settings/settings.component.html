@@ -1,0 +1,20 @@
+<div *ngIf="UiStyle" class="modal fade" id="editClockModal" tabindex="-1" role="dialog"
+  aria-labelledby="editClockModalLabel" aria-hidden="true">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content ">
+      <div class="modal-body bg-light text-dark ">
+        <app-settings-tabs></app-settings-tabs>
+        <div class="tab-content p-3 text-center" id="myTabContent">
+          <div class="tab-pane fade" id="zones" role="tabpanel" aria-labelledby="zones-tab">
+            <app-settings-clocks [Clocks]="Clocks" [UiStyle]="UiStyle"></app-settings-clocks>
+          </div>
+          <div class="tab-pane fade show active p-2" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+            <app-settings-page [UiStyle]="UiStyle"></app-settings-page>
+          </div>
+          <div class="tab-pane fade p-2" id="data" role="tabpanel" aria-labelledby="data-tab">
+            <app-settings-data></app-settings-data>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
