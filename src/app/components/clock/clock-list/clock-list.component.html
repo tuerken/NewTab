@@ -1,6 +1,6 @@
 <ul id="clocks" class="list-group list-group-horizontal-sm  noselect" [ngStyle]="{'zoom':UiStyle.zoom,'padding-top':UiStyle.marginTop}">
   <li class="list-group-item text-center " *ngFor="let clock of Clocks">
-    <app-clock-item [Clock]="clock"data-toggle="modal" data-target="#editClockModal" [UiStyle]="UiStyle"></app-clock-item>
+    <app-clock-item [Clock]="clock" data-bs-toggle="modal" data-bs-target="#editClockModal" [UiStyle]="UiStyle"></app-clock-item>
   </li>
 </ul>
 

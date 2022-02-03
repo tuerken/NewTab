@@ -1,7 +1,7 @@
 <div *ngIf="UiStyle" class="modal fade" id="editClockModal" tabindex="-1" role="dialog" aria-labelledby="editClockModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content ">
-      <div class="modal-body bg-light text-dark ">
+      <div class="modal-body">
         <app-settings-tabs [showData]="showData"></app-settings-tabs>
         <div class="tab-content p-3" id="myTabContent">
           <div class="tab-pane fade" id="zones" role="tabpanel" aria-labelledby="zones-tab">
@@ -15,8 +15,11 @@
           </div>
         </div>
       </div>
-      <div class="model-footer" *ngIf="!showData">
-        <a (click)="showData=true" class="p-1" style="cursor: pointer;"><small>Restore or Backup</small></a>
+      <div class="model-footer p-3" *ngIf="!showData">
+        <div class="position-relative">
+          <div class="position-absolute bottom-0 start-0"><app-settings-theme></app-settings-theme></div>
+          <div class="position-absolute bottom-0 end-0"><a (click)="showData=true" class="p-1" style="cursor: pointer;"><small>Restore or Backup</small></a></div>
+        </div>
       </div>
     </div>
   </div>

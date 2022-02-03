@@ -4,7 +4,7 @@
             <tr *ngFor="let item of Clocks">
                 <td><input type="text" class="form-control" [(ngModel)]="item.label" (blur)="update(item)"></td>
                 <td>
-                    <select [(ngModel)]="item.code" (blur)="update(item)" class="custom-select">
+                    <select [(ngModel)]="item.code" (blur)="update(item)" class="form-select">
                         <Option value='Africa/Abidjan'>Africa/Abidjan</Option>
                         <Option value='Africa/Accra'>Africa/Accra</Option>
                         <Option value='Africa/Addis_Ababa'>Africa/Addis_Ababa</Option>

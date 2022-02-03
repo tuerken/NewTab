@@ -1,38 +1,35 @@
 <div class="row ">
-    <div class="col-12">
-        <app-settings-theme></app-settings-theme>
-    </div>
     <div class="col-6">
-      <div class="form-group">
-        <label for="inputBackgroundColor">Background Color</label>
+      <div class="mb-3">
+        <label for="inputBackgroundColor"  class="form-label">Background Color</label>
         <input type="color" class="form-control   form-control-sm" id="inputBackgroundColor"
           [(ngModel)]="UiStyle.background" (change)="update()">
       </div>
-      <div class="form-group">
-        <label for="inputTextColor">Text Color</label>
+      <div class="mb-3">
+        <label for="inputTextColor"  class="form-label">Text Color</label>
         <input type="color" class="form-control   form-control-sm" id="inputTextColor"
           [(ngModel)]="UiStyle.foreground" (change)="update()">
       </div>
-      <div class="form-group">
-        <label for="inputWorkdayColor">Highlighted Color</label>
+      <div class="mb-3">
+        <label for="inputWorkdayColor"  class="form-label">Highlighted Color</label>
         <input type="color" class="form-control form-control-sm" id="inputWorkdayColor"
           [(ngModel)]="UiStyle.workday" (change)="update()">
       </div>
     </div>
     <div class="col-6">
-      <div class="form-group">
-        <label for="inputTextColor">Margin Top</label>
+      <div class="mb-3">
+        <label for="inputTextColor"  class="form-label">Margin Top</label>
         <input type="text" class="form-control form-control-sm" id="inputMarginTop"
           [(ngModel)]="UiStyle.marginTop" (change)="update()">
       </div>
-      <div class="form-group">
-        <label for="inputTextColor">Zoom</label>
+      <div class="mb-3">
+        <label for="inputTextColor"  class="form-label">Zoom</label>
         <input type="text" class="form-control form-control-sm" id="inputZoom" [(ngModel)]="UiStyle.zoom"
           (change)="update()">
       </div>
 
-      <div class="form-group">
-        <label for="inputTextColor">Active Hours</label>
+      <div class="mb-3">
+        <label for="inputTextColor"  class="form-label">Active Hours</label>
       
         <div class="input-group"> <input type="number" class="form-control form-control-sm"
             id="inputWorkStart" [(ngModel)]="UiStyle.workStart" (change)="update()">
