@@ -3,7 +3,7 @@
 	"manifest_version":3,
     "name": "New Tab",
     "description": "New Tab",
-    "version": "1.0.0.9",
+    "version": "1.0.0.10",
     "permissions" : [  ],
     "chrome_url_overrides" : {
         "newtab": "index.html"
