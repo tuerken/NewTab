@@ -131,6 +131,9 @@
           }
         }
       }
-    }},
-  "defaultProject": "chrome-new-tab"
+    }
+  },
+  "cli": {
+    "analytics": false
+  }
 }
