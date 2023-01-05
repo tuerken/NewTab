@@ -27,6 +27,10 @@ export class ClockItemComponent implements OnInit {
     setInterval(()=>{this.refresh(this.Clock.code)},1000*30);
   }
 
+  getLabel(s:string) {
+    return  s.includes('.') ? s.split('.')[1] : s; 
+  }
+
   refresh(code:string){
     let nowThere = moment().utc().clone().tz(code);
     this.now = nowThere.format('HH:mm');
